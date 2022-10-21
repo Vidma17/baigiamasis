@@ -1,0 +1,21 @@
+#visitorRegisterForm {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 1rem auto;
+}
+
+#visitorRegisterForm .actions {
+  display: flex;
+  justify-content: space-around;
+}
+
+#visitorRegisterForm button {
+  width: 45%;
+}
+
+.visitorRegisterContainer {
+  display: flex;
+  width: 80%;
+  margin: 1rem auto;
+}

@@ -1,0 +1,32 @@
+body  {
+  background-image: url("../../photos/event.jpg");
+  background-color: black;
+}
+
+.add-visitor-form {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    background-color: rgba(0,0,0,0.5);
+    padding: 50px 0px;
+}
+
+#visitorRegisterForm {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 1rem auto;
+}
+
+.visitorRegisterContainer {
+  display: flex;
+  width: 80%;
+  margin: 1rem auto;
+}
+
+#visitorRegisterForm .actions {
+  display: flex;
+}
+
+#visitorRegisterForm button {
+  width: 100%;
+}

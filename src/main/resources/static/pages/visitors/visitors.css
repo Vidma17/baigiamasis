@@ -1,0 +1,41 @@
+body  {
+  background-image: url("../../photos/event.jpg");
+  background-color: black;
+}
+
+.list-visitor-form {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    background-color: rgba(0,0,0,0.5);
+    padding: 50px 50px;
+}
+
+table, th, tr, td {
+    color: white!important;
+}
+
+.saveButton {
+    margin: 0px 2px;
+}
+
+.cancelButton {
+    margin: 0px 2px;
+}
+
+.editButton {
+    margin: 0px 2px;
+}
+
+.deleteButton {
+    margin: 0px 2px;
+}
+
+.visitorRegisterContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 1rem auto;
+}
+.visitorRegisterContainer #addNewVisitor {
+  margin-bottom: 1rem;
+}

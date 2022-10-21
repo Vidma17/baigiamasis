@@ -1,0 +1,198 @@
+{
+	"info": {
+		"_postman_id": "c7a83dc3-202d-44e4-bc5b-ba0b69782bc0",
+		"name": "VIGI19",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6765997"
+	},
+	"item": [
+		{
+			"name": "Get all car owners",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/car-owner",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"car-owner"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create car owner",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"companyName\": \"Kompanijos\",\n    \"address\": \"Gatviu g. 15\",\n    \"phoneNo\": \"12312453123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/car-owner",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"car-owner"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get car owner by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/car-owner/:id",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"car-owner",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update car owner by id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"companyName\": \"UAB \\\"Rimta kopmanija\\\"\",\n    \"address\": \"Rimtoji g. 100\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/car-owner/:id",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"car-owner",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete car owner by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/car-owner/:id",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"car-owner",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch car owner by id",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"address\": \"Rimtoji g. 150\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/car-owner/:id",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"car-owner",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get car owners by id company",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/car-owner/:id/company",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"car-owner",
+						":id",
+						"company"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8080"
+		}
+	]
+}

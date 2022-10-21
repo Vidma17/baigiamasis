@@ -1,0 +1,11 @@
+body  {
+  background-image: url("./photos/event.jpg");
+  background-color: black;
+}
+
+.home-text {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    background-color: rgba(0,0,0,0.5);
+    padding: 50px 0px;
+}
